@@ -1,0 +1,19 @@
+Package: pkgusage
+Title: Package usage
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Jonas Kristoffer", 
+           family = "Lindeløv", 
+           email = "jonas@lindeloev.dk", 
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-4565-0595"))
+Description: This package infers package usage from either saved files or through an active listener. Scan files using `pkg_scan()` or listen to evaluated code by adding `pkgusage::listen()` to your `.Rprofile`. Then use helper functions to extract usage and compare to the installed packages to detect unused or missing packages.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+Imports:
+  renv,
+  tools
+Suggests:
+  rstudioapi
